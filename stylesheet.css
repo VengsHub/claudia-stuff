@@ -40,7 +40,7 @@ a{
     color:#585657;
     font-family:Helvetica, sans-serif;
 }
-a:hover{
+.nav-button:hover{
     color:#333031;
     background-color:#d2a0ab;
 }
