@@ -10,25 +10,28 @@ body{
     margin:0;
     min-height:100%;
     /* min-height: zusätzliches css attribut */
-    position:relative;
+    display:flex;
+    /* display : zusätzliches css attribut */
+    flex-direction:column;
+    /* flex-direction: zusätzliches css attribut */
 }
 nav{
     background-color:#f5b7c4;
     padding:5px;
     display:flex;
-    /* display: zusätzliches css attribut */
     align-items:center;
     /* align-items: zusätzliches css attribut */
+    position:sticky;
+    top:0;
 }
 footer{
     background-color:#fcf0f0;
-    position:absolute;
-    bottom:0;
+    margin-top:auto;
     width:100%;
-}
-ul{
     font-family:Helvetica, sans-serif;
     color:#585657;
+}
+ul{
     list-style-type: none;
     text-align:center;
     padding:20px;
@@ -56,4 +59,66 @@ a{
 #active{
     color:#333031;
     border-bottom: 1.5px solid #333031;
+}
+#div-homepage{
+    width:60%;
+    min-height:300px;
+    margin: auto;
+    margin-top:50px;
+    margin-bottom:50px;
+    padding:40px;
+    border: 2px solid #f5b7c4;
+    border-radius:4px;
+    text-align:center;
+    color:#585657;
+    font-family:"Nav font";
+    font-size:18px;
+}
+.homepage-list{
+    margin-bottom:25px;
+}
+.subpages{
+    width:70%;
+    min-height:300px;
+    min-width:510px;
+    margin: auto;
+    margin-top:50px;
+    margin-bottom:50px;
+    padding:80px;
+    padding-top:50px;
+    border: 2px solid #f5b7c4;
+    border-radius:4px;
+    color:#585657;
+    font-family:Helvetica, sans-serif;
+    font-size:18px;
+    line-height:28px;
+    /* nur ästetisch, kann weg wenn zu viele tags */
+}
+h2{ 
+    color:#f5b7c4;
+    margin-top:0px;
+    margin-bottom:40px;
+}
+h4{
+    margin:0px;
+}
+.a-pink{
+    color:#d2a0ab;
+}
+aside{
+    float:right;
+    /* float: zusätzliches css attribut*/
+    margin-left:10px;
+}
+.subpage-side-div{
+    width:225px;
+    background-color:#f5b7c4;
+    color:white;
+    border:3px solid #f5b7c4;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+.subpage-side-img{
+    border:3px solid #f5b7c4;
 }
